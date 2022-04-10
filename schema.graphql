@@ -1,5 +1,27 @@
-type ExampleEntity @entity {
+type Proposal @entity {
   id: ID!
-  count: BigInt!
-  executor: Bytes! # address
+  proposalID: BigInt!
+  creator: String!
+  ipfsHash: String!
+  executed: Boolean!
+  queued: Boolean!
+  canceled: Boolean!
+  title: String
+  author: String
+  shortDescription: String
+  description: String
+  discussions: String
+  created: String
+  basename: String
 }
+
+# "DIP": 3,
+# "title": "Safety Module Restoration",
+# "status": "Proposed",
+# "author": "Paradigm",
+# "shortDescription": "Restore functionality to the Safety Module staking pool.",
+# "discussions": "https://commonwealth.im/dydx/proposal/discussion/1743-safety-staking-pool-on-pause",
+# "created": "2021-10-14T00:00:00.000Z",
+# "preview": "**DIP Summary**\n\nRestore functionality to the Safety Module staking …",
+# "basename": "DIP-3",
+# "description":
